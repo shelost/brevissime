@@ -1,0 +1,153 @@
+body{
+
+    overflow: hidden;
+    font-family: Avenir, sans-serif;
+
+}
+
+::selection{
+
+    background: black;
+    color: white;
+}
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+#params{
+
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    margin: 0;
+    background-color: #202020;
+  
+    h1{
+
+        font-size: 1.5vw;
+        padding: 1vw;
+        font-weight: 500;
+        color: white;
+
+    }
+
+    h2{
+
+        font-size: 1.5vw;
+        font-weight: 900;
+        color: white;
+        font-style: italic;
+        background-color: #007CFF;
+        padding: 2vw;
+
+    }
+
+    select{
+
+        background-color: #606060;
+        color: white;
+        appearance: none;
+        padding: 1vw;
+        height: 100%;
+        width: fit-content;
+        border: none;
+        border-radius: 0;
+        font-size: 1.5vw;
+
+        &:focus{
+
+            outline: none;
+        }
+
+        &:-ms-expand{
+
+            display: none;
+
+        }  
+
+        &:hover{
+
+            background-color: #909090;
+        }
+    }
+}
+
+.input{
+
+    background-color: #E0E0E0;
+    outline: none;
+    border: none;
+    font-size: 2vw;
+    padding: 1vw;
+    transition: 0.1s ease;
+
+    &:hover{
+
+        background-color: #D0D0D0;
+    }
+}
+
+#textarea{
+
+    width: 100%;
+    height: 80vh;
+}
+
+#presentation{
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#button{
+
+    height: 9vh;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
+    transition: 0.1s ease;
+
+    &:focus{
+
+        outline: none;
+    }
+
+    &:hover{
+
+        background-color: #DD0000;
+    }
+}
+
+
+.slide{
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-size: 6vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  
+}
+
+.hidden{
+
+    display: none;
+}
